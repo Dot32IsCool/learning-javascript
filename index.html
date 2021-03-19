@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>javascript amirite</title>
+
+  <!-- CSS starts here -->
+  <style>
+  	button {
+		  background-color: white;
+		  border-radius: 12px;
+		  border: none;
+		  color: black;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 5px;
+		}
+
+		button:hover {
+		  /*background-color: white;*/
+		  cursor:pointer;
+		}
+
+		button:focus {
+    	outline: none;
+		}
+
+		button:active {
+			background-color: black;
+			color: white;
+		}
+  </style>
+</head>
+<body>
+	<!-- HTML starts here -->
+	<button onClick="nextColour()"><b>change background colour</b></button>
+
+	<!-- JS starts here -->
+  <script>
+  	var colour = 205;
+  	document.body.style.backgroundColor = `hsl(${colour}, 62%, 61%)`;
+
+  	function nextColour() {
+  		colour = colour + 25
+  		document.body.style.backgroundColor = `hsl(${colour}, 62%, 61%)`;
+  	}
+
+  	setInterval(function(){
+			console.log('human is ready');
+		}, 1000)
+  </script>
+</body>
+</html>
