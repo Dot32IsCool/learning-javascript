@@ -1,2 +1,2 @@
-# learning-javascript
-little test project i was experimenting on
+# trying-to-learn-javascript
+yeah
